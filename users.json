@@ -1,0 +1,30 @@
+[
+  {
+    "username": "Devu",
+    "email": "bmdikshith3@gmail.com",
+    "password_hash": "scrypt:32768:8:1$wsnoxQXw5Y5xo7mU$7c52cb043d688fefa419d3118087f306f3d301fe64810ae9dc58983a44edc9258841081f3c956d5d9f98a67528a23a6a47d08ccc5a42620c9f8b83a0bd9545e7",
+    "created_at": "2025-06-21T00:59:15.408528",
+    "id": 1
+  },
+  {
+    "username": "jbhavik388@gmail.com",
+    "email": "jbhavik388@gmail.com",
+    "password_hash": "scrypt:32768:8:1$vSn5nhW0uiPR3IWF$d8407bb1a34c2f4be3a1fcf19dce3e05a344863624b4485eb6fe4e11e429130b02214ec31e78825020e2058eefe3d05a1210a6b047ce86bd8130a2c547653db3",
+    "created_at": "2025-06-21T13:34:07.698425",
+    "id": 2
+  },
+  {
+    "username": "Biswarup Dutta",
+    "email": "xyz@gmail.com",
+    "password_hash": "scrypt:32768:8:1$3qvQFMb9DCKYWUw8$911a5f07b0a4d8934f48285eba183e8648198c65e64fa40344d98c5df5a4684d0d12aa7f659680529e8fee1a9cf5861d3b66c3fd2c71b16a6a016167bd4a9bf5",
+    "created_at": "2025-07-16T15:10:42.310871",
+    "id": 3
+  },
+  {
+    "username": "dev1214",
+    "email": "dev1214@gmail.com",
+    "password_hash": "scrypt:32768:8:1$SUI7O9hhYi4Gefmo$dbf28400d225d06f822b143a718f20d41c0035d70aac6fdb0560170bf57587db33580610fd7aec7c7c2747e7e717a7cdbc2fc15ee4648e6c70b22312d4603420",
+    "created_at": "2025-07-17T07:17:35.042764",
+    "id": 4
+  }
+]
