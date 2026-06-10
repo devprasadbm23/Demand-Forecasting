@@ -1,0 +1,29 @@
+# Environment variables
+.env
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Databases and user data files
+*.db
+users.json
+users.csv
+users.xlsx
+contact_data.csv
+contact_data.db
+contact_data.json
+contact_data.xlsx
+
+# Trained model files
+*.pkl
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/

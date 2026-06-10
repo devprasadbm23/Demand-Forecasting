@@ -18,10 +18,19 @@ app = Flask(__name__)
 
 app.secret_key = 'MakeMyTrip'  # IMPORTANT: Change this!
 
-JSON_FILE = 'users.json'
-CSV_FILE = 'users.csv'
-EXCEL_FILE = 'users.xlsx'
-MODEL_PKL_FILE = 'trained_model.pkl'
+ON_VERCEL = os.environ.get('VERCEL') == '1'
+
+if ON_VERCEL:
+    JSON_FILE = '/tmp/users.json'
+    CSV_FILE = '/tmp/users.csv'
+    EXCEL_FILE = '/tmp/users.xlsx'
+    MODEL_PKL_FILE = '/tmp/trained_model.pkl'
+else:
+    JSON_FILE = 'users.json'
+    CSV_FILE = 'users.csv'
+    EXCEL_FILE = 'users.xlsx'
+    MODEL_PKL_FILE = 'trained_model.pkl'
+
 DATASET_CSV_FILE = 'Final_Dataset.csv'
 
 
@@ -108,7 +117,10 @@ def find_user_by_field(field_name, value):
 
 
 # SQLite database file
-DB_FILE = 'contact_data.db'
+if ON_VERCEL:
+    DB_FILE = '/tmp/contact_data.db'
+else:
+    DB_FILE = 'contact_data.db'
 
 # Initialize DB and table if not exist
 def init_db():
@@ -669,6 +681,6 @@ if __name__ == '__main__':
     # The global 'predictor' object is already initialized when the class is defined.
     # Its 'is_trained' flag will be False, and median dictionaries will be empty.
 
-    print(f"\n🚀 Starting Platform Predictor App...")
+    print(f"\nStarting Platform Predictor App...")
     # Ensure PORT is correctly sourced or defaulted
     app.run(port=8080, debug=False)
